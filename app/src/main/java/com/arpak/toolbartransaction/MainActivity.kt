@@ -50,6 +50,10 @@ class MainActivity : AppCompatActivity(),SearchView.OnQueryTextListener {
                 Toast.makeText(applicationContext, "Ekle Tıklandı", Toast.LENGTH_SHORT).show()
                 return true
             }
+            R.id.action_search -> {
+                Toast.makeText(applicationContext, "Arama Tıklandı", Toast.LENGTH_SHORT).show()
+                return true
+            }
 
             else -> return super.onOptionsItemSelected(item)
         }
